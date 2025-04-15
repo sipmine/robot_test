@@ -20,6 +20,10 @@ public class LampsSubsystem extends SubsystemBase {
 
     private final DigitalOutput greenLamp;
     private final DigitalOutput redLamp;
+
+
+
+
     /**
      * Returns the Singleton instance of this LampsSubsystem. This static method
      * should be used, rather than the constructor, to get the single instance
