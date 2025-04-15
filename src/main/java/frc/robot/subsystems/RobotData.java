@@ -33,5 +33,7 @@ public class RobotData extends SubsystemBase {
     public static final NetworkTableEntry redLamp = lampTab.add("red status", false).getEntry();
 
 
+    public static final ShuffleboardTab visionTab = Shuffleboard.getTab("VisionSubsystem");
+
 }
 

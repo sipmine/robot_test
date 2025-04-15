@@ -11,10 +11,7 @@ import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.commands.AutoCommandGroup;
-import frc.robot.subsystems.ButtonSubsystem;
-import frc.robot.subsystems.DriveSubsystem;
-import frc.robot.subsystems.LampsSubsystem;
-import frc.robot.subsystems.SensorSubsystem;
+import frc.robot.subsystems.*;
 
 /**
  * This class is where the bulk of the robot should be declared.  Since Command-based is a
@@ -30,6 +27,7 @@ public class RobotContainer {
 
     public static final LampsSubsystem lampSubsystem = LampsSubsystem.getInstance();
 
+    public static final VisionSubsystem visionSubsystem = new VisionSubsystem();
 
     public static final Command autocommand = new AutoCommandGroup();
     /**
