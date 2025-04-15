@@ -35,6 +35,10 @@ public class SensorSubsystem extends SubsystemBase {
         navX = new AHRS(I2C.Port.kMXP);
     }
 
+    public  void resetNavx(){
+        navX.reset();
+    }
+
     public double getYaw(){
         return navX.getYaw();
     }

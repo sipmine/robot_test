@@ -47,6 +47,11 @@ public class DriveSubsystem extends SubsystemBase {
 
     }
 
+    public void resetENC(){
+        encoderLeft.reset();
+        encoderRight.reset();
+    }
+
     public void setMotorLeftSpeed(double speed) {
         motorLeft.set(speed);
     }
@@ -60,7 +65,7 @@ public class DriveSubsystem extends SubsystemBase {
     }
 
     public double getRightDistance() {
-        return encoderLeft.getEncoderDistance();
+        return encoderRight.getEncoderDistance();
     }
 
     public double getAvgDistance(){
@@ -72,7 +77,7 @@ public class DriveSubsystem extends SubsystemBase {
     }
 
     public double getRightRaw() {
-        return encoderLeft.getRaw();
+        return encoderRight.getRaw();
     }
 
     @Override
