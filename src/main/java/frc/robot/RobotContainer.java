@@ -11,6 +11,10 @@ import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.commands.AutoCommandGroup;
+import frc.robot.commands.example.FakeLampAndButtonCommandGroup;
+import frc.robot.commands.example.Move1MCommandGroup;
+import frc.robot.commands.example.ReadBarcodeCommandGroup;
+import frc.robot.commands.example.Rotate180CommandGroup;
 import frc.robot.subsystems.*;
 
 /**
@@ -23,13 +27,33 @@ public class RobotContainer {
     public static final DriveSubsystem driveSubsystem = DriveSubsystem.getInstance();
     public static final SensorSubsystem sensorSubsystem = SensorSubsystem.getInstance();
 
-    public static final ButtonSubsystem buttonSubsystem = ButtonSubsystem.getInstance();
+    // public static final ButtonSubsystem buttonSubsystem = ButtonSubsystem.getInstance();
 
-    public static final LampsSubsystem lampSubsystem = LampsSubsystem.getInstance();
+    // public static final LampsSubsystem lampSubsystem = LampsSubsystem.getInstance();
 
     public static final VisionSubsystem visionSubsystem = new VisionSubsystem();
 
+    //TODO main
+
     public static final Command autocommand = new AutoCommandGroup();
+
+    //TODO example 1 meter move
+
+    // public static final Command autocommand = new Move1MCommandGroup();
+
+    //TODO example rotate 180
+
+    // public static final Command autocommand = new Rotate180CommandGroup();
+
+    //TODO example read QR code (barcode)
+
+    // public static final Command autocommand = new ReadBarcodeCommandGroup();
+
+    //TODO example FakeLampAndButton
+
+    // public static final Command autocommand = new FakeLampAndButtonCommandGroup();
+
+
     /**
      * The container for the robot.  Contains subsystems, OI devices, and commands.
      */

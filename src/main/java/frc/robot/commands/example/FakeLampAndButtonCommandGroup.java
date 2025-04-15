@@ -10,6 +10,7 @@ public class FakeLampAndButtonCommandGroup extends SequentialCommandGroup {
 
         super(
                 new FakeLampCommand("green", false),
+                new FakeLampCommand("red", true),
                 new FakeButtonCommand("Start"),
                 new FakeLampCommand("green", true)
         );
