@@ -12,8 +12,8 @@ public class MoveForwardCommand extends CommandBase {
     private final SensorSubsystem sensorSubsystem = RobotContainer.sensorSubsystem;
 
     //TODO calibrate PID for move command
-    private final PIDController forward = new PIDController(0,0,0);
-    private final PIDController rotation = new PIDController(0,0,0);
+    private final PIDController forward = new PIDController(0.5,0,0);
+    private final PIDController rotation = new PIDController(0.005,0,0);
 
     private final double distance;
     public MoveForwardCommand(double distance) {
@@ -36,7 +36,7 @@ public class MoveForwardCommand extends CommandBase {
         double rightSpeed = forward.calculate(driveSubsystem.getAvgDistance(), distance) + rotation.calculate(sensorSubsystem.getYaw(), 0);
 
         driveSubsystem.setMotorLeftSpeed(leftSpeed);
-        driveSubsystem.setMotorRightSpeed(rightSpeed);
+        driveSubsystem.setMotorRightSpeed(-rightSpeed);
     }
 
     @Override
