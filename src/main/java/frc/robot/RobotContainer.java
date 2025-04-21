@@ -27,6 +27,14 @@ public class RobotContainer {
     public static final DriveSubsystem driveSubsystem = DriveSubsystem.getInstance();
     public static final SensorSubsystem sensorSubsystem = SensorSubsystem.getInstance();
 
+    public static final UltrasonicSubsystem ultrasonic_1 = new UltrasonicSubsystem(Constants.ULTRASONIC_1_TRIG, Constants.ULTRASONIC_1_TRIG, "first");
+    public static final UltrasonicSubsystem ultrasonic_2 = new UltrasonicSubsystem(Constants.ULTRASONIC_2_TRIG, Constants.ULTRASONIC_2_TRIG, "second");
+
+    public static final IRSharpSubsystem sharp_1 = new IRSharpSubsystem(Constants.IR_SHARP_1, "first");
+    public static final IRSharpSubsystem sharp_2 = new IRSharpSubsystem(Constants.IR_SHARP_2, "second");
+
+
+
     // public static final ButtonSubsystem buttonSubsystem = ButtonSubsystem.getInstance();
 
     // public static final LampsSubsystem lampSubsystem = LampsSubsystem.getInstance();

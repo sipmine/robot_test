@@ -34,4 +34,21 @@ public final class Constants
     public static final int GREEN_LAMP = 0;
     public static final int RED_LAMP = 0;
 
+
+    /**
+     *  FLEX DIO (ch 1-11)
+     */
+    public static final int ULTRASONIC_1_ECHO = 0;
+    public static final int ULTRASONIC_1_TRIG= 0;
+    public static final int ULTRASONIC_2_ECHO = 0;
+    public static final int ULTRASONIC_2_TRIG= 0;
+
+    /**
+     *  ANALOG DIO (ch 22-25)
+     */
+
+    public static final int IR_SHARP_1 = 0;
+
+    public static final int IR_SHARP_2 = 0;
+
 }
